@@ -2,6 +2,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Mousewheel } from 'swiper'
 import Image from 'next/image'
+import Link from "next/link"
 import 'swiper/css'
 import 'swiper/css/navigation'
  const HorizonSwiper = () => {
@@ -80,7 +81,9 @@ import 'swiper/css/navigation'
                     <Image src={slide.image} alt="slide.name" width={42} height={46} />
                 </div>
                 <div className='menu__slide__name'>
-                    <a href="/#">{slide.name}</a>
+                    <Link href="/#">
+                        <a>{slide.name}</a>
+                    </Link>
                 </div>
             </div>
         </SwiperSlide>

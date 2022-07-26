@@ -69,7 +69,7 @@ $green : #9fda40;
 }
 .wrap .text i{
     font-weight: bolder;
-    color: brown;
+    color: #d7b928;
 }
 .wrap .text b, .wrap .text span{
     font-size: 0.9em;
@@ -105,8 +105,9 @@ $green : #9fda40;
     border: none;
 }
 @media screen and (max-width : 505px){
-    #store{
-        grid-template-columns: repeat(auto-fill, 100%);
+    #store {
+
+        grid-template-columns: repeat(auto-fill, 212px);
     }
     .wrap{
         border: none;
@@ -117,6 +118,23 @@ $green : #9fda40;
         border: none;
     }
     .wrap .image {
-        height: 325px;
+        height: auto;
+    }
+    .wrap .text p {
+        margin: 11px 0px 57px 0px;
     }
 }
+@media screen and (max-width : 424px){
+    #store {
+        grid-template-columns: repeat(auto-fill, 178px);    
+    }
+    .wrap .text p {
+        margin: 5px 0px 49px 0px;
+    }
+}
+@media screen and (max-width : 355px){
+    #store {
+        grid-template-columns: repeat(auto-fill, 100%);    
+    }
+}
+

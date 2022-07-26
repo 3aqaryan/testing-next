@@ -18,24 +18,26 @@
     margin-top: 80px;
     color: #fff;
 }
-.itemAboutus:nth-child(2)>p>img{
-    height: 90px;
-    width: 90px;
-    position: relative;
-    top: 25px;
+.itemAboutus:nth-child(2)>p img{
+    height: 90px !important;
+    width: 90px !important;
+    /* position: relative !important; */
+    top: 21px !important;
 }
 .itemAboutus span{
     color: var(--gold);
 }
-.itemAboutus:nth-child(1) img{
-    height: 320px;
+
+.itemAboutus:nth-child(1) span img{
+    height: 320px !important;
+    width: 426px !important;
     border-radius: 4px;
 }
-.itemAboutus:nth-child(1) img:nth-child(2){
-    margin: 15px 0 0 90px;
-}
+.itemAboutus:nth-child(1) span:nth-child(2) img{
+    margin: 15px 0 0 50px !important;
+} 
 .itemAboutus:nth-child(2) img{
-    width: 70%;
+    width: 70% !important;
 }
 @media only screen and (max-width: 1514px){
     .itemAboutus p{
@@ -48,14 +50,18 @@
     }
 }
 @media only screen and (max-width: 992px){
-    .itemAboutus:nth-child(1) img {
-        height: 280px;
+    .itemAboutus:nth-child(1) span{
+        margin-left: 10px !important;
     }
-    .itemAboutus:nth-child(1) img:nth-child(2) {
-        margin: 0;
+    .itemAboutus:nth-child(1) span img {
+        height: 280px !important;
+    }
+    .itemAboutus:nth-child(1) span:nth-child(2) img {
+        margin: 0 !important;
     }
     .itemAboutus:nth-child(2) img {
-        width: 45%;
+        width: 220px !important;
+        height: 80px !important;
     }
     .itemAboutus:nth-child(2) {
         margin-top: 30px;
@@ -71,6 +77,21 @@
         display: flex
     }
 }
+@media only screen and (max-width: 936px){
+    .itemAboutus{
+        flex-direction: column;
+    }
+    .itemAboutus:nth-child(1) span img {
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .itemAboutus:nth-child(1) span:nth-child(2) img {
+        margin-top: 10px;
+    }
+    .itemAboutus:nth-child(1) span{
+        margin-left: 0 !important;
+    }
+}
 @media only screen and (max-width: 756px){
     .itemAboutus p {
         text-align: center;
@@ -79,10 +100,6 @@
 @media only screen and (max-width: 614px){
     .itemAboutus {
         margin: 50px 0 0 0;
-    }
-    .itemAboutus p {
-        overflow-y: scroll;
-        max-height: 500px;
     }
 }
 @media only screen and (max-width: 614px){

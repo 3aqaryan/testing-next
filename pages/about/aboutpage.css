@@ -74,18 +74,6 @@
         font-size: 32px;
     }
 }
-@media only screen and (max-width: 936px){
-    .itemAboutus{
-        flex-direction: column;
-    }
-    .itemAboutus:nth-child(1) img {
-        height: 100%;
-        width: 100%;
-    }
-    .itemAboutus:nth-child(1) img:nth-child(2) {
-        margin-top: 10px;
-    }
-}
 @media only screen and (max-width: 670px){
     .aboutpage h1{
         font-size: 24px;

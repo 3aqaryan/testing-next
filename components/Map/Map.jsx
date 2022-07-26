@@ -9,7 +9,7 @@ const MapStore = ({coordinatestore}) => {
   return(
       <YMaps>
         <Map state={coordinatestore}>
-          {coordinates.map(coordinate => <Placemark geometry={coordinate} />)}
+          {coordinates.map(coordinate => <Placemark key={coordinate} geometry={coordinate} />)}
         </Map>
       </YMaps>
   )

@@ -1,45 +1,21 @@
 import React from "react";
+import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
-import Slide1 from './../../public/images/slide/slide1.jpg'
-import Slide2 from './../../public/images/slide/slide2.png'
-import Slide3 from './../../public/images/slide/slide3.jpg'
 
-import Slide1Small from './../../public/images/slide/slide1_small.jpg'
-import Slide2Small from './../../public/images/slide/slide2_small.jpg'
-import Slide3Small from './../../public/images/slide/slide3_small.jpg'
-
-export default () => (
-  <Carousel autoPlay emulateTouch interval='3500' infiniteLoop>
+const CarouselImages =  () => (
+  <Carousel autoPlay emulateTouch interval="3500" showThumbs={false} infiniteLoop>
     <div>
-      <img
-        alt="Slide1"
-        src={Slide1.src}
-      />
-      <img
-        alt="Slide1Small"
-        src={Slide1Small.src}
-      />
+      <Image alt="Slide1" src='/images/slide/slide1.jpg' width={1920} height={550} />
+      <Image alt="Slide1Small" src='/images/slide/slide1_small.jpg' width={414} height={540}/>
     </div>
     <div>
-      <img
-        alt="Slide2"
-        src={Slide2.src}
-      />
-      <img
-        alt="Slide2Small"
-        src={Slide2Small.src}
-      />
+      <Image alt="Slide2" src='/images/slide/slide2.png' width={1920} height={550} />
+      <Image alt="Slide2Small" src='/images/slide/slide2_small.jpg' width={414} height={540} />
     </div>
     <div>
-      <img
-        alt="Slide3"
-        src={Slide3.src}
-      />
-      <img
-        alt="Slide3Small"
-        src={Slide3Small.src}
-      />
+      <Image alt="Slide3" src='/images/slide/slide3.jpg' width={1920} height={550}/>
+      <Image alt="Slide3Small" src='/images/slide/slide3_small.jpg' width={414} height={540}/>
     </div>
   </Carousel>
 );
-
+export default CarouselImages
