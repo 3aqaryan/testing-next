@@ -1,0 +1,9 @@
+{
+    "login" : "Вход",
+    "eMail" : "Эл. почта",
+    "password" : "Пароль",
+    "forgotPassword" : "Забыли пароль?",
+    "signIn" : "Войти",
+    "doNotHaveAccount" : "Нет профиля?",
+    "registration" : "Регистрация"
+}

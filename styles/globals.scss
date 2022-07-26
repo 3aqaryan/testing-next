@@ -1,0 +1,83 @@
+:root{
+    --white : #fff;
+    --gold : #fbc43e;
+    --red : #c30f1b;
+    --green : #649c09;
+  }
+  * {
+    font-family: proximaNova;
+    margin: 0;
+    padding: 0;
+  }
+  @font-face {
+    font-family: proximaNova;
+    src: url('./../public/font-family/Mark\ Simonson\ -\ Proxima\ Nova\ Medium.otf');
+  }
+  @font-face {
+    font-family: SFProDisplay;
+    src: url('./../public/font-family/SFProDisplay-Medium.ttf');
+  }
+  body{
+    /* background-image: url('images/bg.jpg'); */
+    background-color: #424242;  
+  }
+  .App{
+    height: 100%;
+  }
+  .mainpage{
+    flex-direction: column;
+}
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  .swiper__menu{
+    max-width: 100%;
+  }
+  .menu__slide{
+    /* width: 180px !important;
+    height: 98px !important; */
+    background-color: #eeeeee;
+  }
+  .menu__slide__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    transition: all .2s;
+      a{
+        color: inherit;
+        text-decoration: none;
+      }
+  }
+  .menu__slide__content:hover{
+    color: goldenrod;
+  }
+  .menu__slide__image{
+      width: 20%;
+  }
+  .menu__slide__image img{
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after{
+    display: none;
+  }
+  .swiper-button-prev, .swiper-button-next{
+    width: 30px !important;
+    height: 30px !important;
+    transform: translate(5px, 10px);
+    /* top: 50px !important; */
+  }
+  .swiper-button-prev {
+    background-image: url(./../public/images/slide/arrow_left.svg);
+  }
+  .swiper-button-next {
+    background-image: url(./../public/images/slide/arrow_right.svg);
+  }
+  .swiper{
+    z-index: 0 !important;
+  }
