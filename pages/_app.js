@@ -7,6 +7,8 @@ import '../components/Stores/stores.css'
 import '../components/Map/map.css'
 import '../components/AboutUs/aboutus.css'
 import "./about/aboutpage.css";
+import "./admin/dashboard/dashboard.scss";
+
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }

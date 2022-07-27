@@ -88,8 +88,15 @@ const HeaderComponent = () => {
                         />
                       </a>
                     </Link>
+                    <div className="adress__of__store">
+                      <aside>Ք․ Երևան Ամիրյան 5, <span>Ք․ Մասիս Հանրապետության 5/1</span></aside> 
+                    </div>
                   </div>
                   <div className="upheaderright">
+                    <div className="number__of__phone">
+                        <Image src="/images/icons/phone.svg" width={12} height={12} />
+                        <i>098 - 83 - 01 - 80</i>
+                    </div>
                     {locales?.map((locale) => (
                       <div key={locale} className="armruseng">
                         <Link href={route} locale={locale}>
@@ -104,21 +111,20 @@ const HeaderComponent = () => {
             <header className={`downheader ${navbar ? "active" : ""}`}>
               <div className="downheadercontent">
                 <div className="logodoc">
-                  {/* <LinkRoute to="/" onClick={toTop}> */}
                   <Link href="/">
+                  <a onClick={toTop}>
                     <Image
                       src="/images/nmobile_white.png"
                       alt="Facebook"
                       width={100}
                       height={100}
                     />
+                  </a>
                   </Link>
-                  {/* </LinkRoute> */}
                 </div>
                 <div className="nav">
                   <ul>
                     <li>
-                      {/* <LinkRoute to='/' onClick={toTop}>Home</LinkRoute> */}
                       <Link href="/">
                         <a onClick={toTop}>{t("header:main")}</a>
                       </Link>
@@ -132,11 +138,9 @@ const HeaderComponent = () => {
                       </Link>
                     </li>
                     <li>
-                      {/* <LinkRoute to='/about'>About us</LinkRoute> */}
                       <Link href="/about">{t("header:aboutUs")}</Link>
                     </li>
                     <li>
-                      {/* <LinkRoute to='/'>Contact us</LinkRoute> */}
                       <Link href="/">{t("header:contactUs")}</Link>
                     </li>
                   </ul>
