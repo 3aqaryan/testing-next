@@ -9,6 +9,10 @@
     margin: 0;
     padding: 0;
   }
+  a{
+    text-decoration: none;
+    color : inherit
+  }
   @font-face {
     font-family: proximaNova;
     src: url('./../public/font-family/Mark\ Simonson\ -\ Proxima\ Nova\ Medium.otf');

@@ -88,10 +88,13 @@ $opacityColorWhite : rgba(255, 255, 255, 0.464);
             animation: showBorderHeader .2s forwards;
         }
     }
-    font-size: 22px;
-    font-family: arm hmks bebas neue,sans-serif;
+    a{
+        font-size: 22px;
+        font-family: arm hmks bebas neue,sans-serif;
+        color: #fff;
+    }
+    
     height: 13%;
-    color: #fff;
     display: flex;
     align-items: center;
 }
