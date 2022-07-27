@@ -614,7 +614,6 @@ $opacityColorWhite : rgba(255, 255, 255, 0.464);
 
     .menucontent,.menulanguages, .menulogin {
         width: 100%;
-        padding: 15px;
         margin-right: auto;
         margin-left: auto;    
     }
@@ -631,6 +630,13 @@ $opacityColorWhite : rgba(255, 255, 255, 0.464);
         &::placeholder{
             font-size: 12px;
         }
+    }
+    .menutext {
+        font-size: 20px;
+        height: 7%;
+    }
+    .menucontext {
+        height: 294px;
     }
 }
 

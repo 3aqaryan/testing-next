@@ -1,12 +1,6 @@
 .carousel .thumbs-wrapper {
     display: none;
 }
-.carousel .slider li span:nth-child(1){
-    top: 21px;
-}
-.carousel .slider li span:nth-child(2){
-    width: 100% !important;
-}
 .carousel .slider li span:nth-child(2) img{
     display: none !important;
     max-height: 525px !important;
@@ -21,5 +15,8 @@
     }
     .carousel .slider li span:nth-child(2) img{
         display: block !important;
+    }
+    .carousel .slider li span:nth-child(2){
+        width: 100% !important;
     }
 }
