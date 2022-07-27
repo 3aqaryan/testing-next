@@ -1,6 +1,6 @@
-import Carousel from "./../components/Carousel/Carousel"
-import HorizonSwiper from "./../components/HorizonSwiper/HorizonSwiper"
-import Store from "./../components/Store/Store"
+import Carousel from "../components/Carousel/Carousel"
+import HorizonSwiper from "../components/HorizonSwiper/HorizonSwiper"
+import Store from "../components/Store/Store"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import MainLayoutComponent from '../components/MainLayout/MainLayoutComponent'
 export default function Home() {
