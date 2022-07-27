@@ -6,6 +6,6 @@ module.exports = {
     defaultLocale: "am-AM",
     localeDetection: false,
     pages: {
-        "*": ["common", "header", "homePage", "footer", "about"],
+        "*": ["common", "header", "homePage", "footer", "about", "swiper", "storeItems"],
     }
 };

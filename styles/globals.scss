@@ -30,12 +30,12 @@
   }
   .mainpage{
     flex-direction: column;
-}
+  }
   .container{
     width: 100%;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    padding-bottom: 15px;
   }
   .swiper__menu{
     max-width: 100%;

@@ -1,9 +1,10 @@
 {
-    "allRightReserved" : "Все права защищены. При использовании материалов с сайта, полностью или частично, ссылка на Doctors.am обязательна.",
-    "year" : "© 2022 Doctors LLC не несет ответственности за содержание рекламных материалов.",
-    
-    "homePage" : "Главная страница",
-    "aboutUs" : "О нас",
-    "advertisement" : "Реклама",
-    "contactUs" : "Обратная связь"
+    "joinUs" : "Присоединяйтесь к нам!",
+    "answerQuestions" : "We will gladly answer all your questions",
+    "workinghours" : "Мы с радостью ответим на все ваши вопросы",
+    "serviceCenter" : "Сервисный центр",
+    "qualityService" : "Качественное обслуживание",
+    "monSat" : "Пн-Сб",
+    "sunday" : "Воскресенье",
+    "allRightsReserved" : "Все права защищены"
 }

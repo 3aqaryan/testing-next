@@ -5,42 +5,47 @@ import Image from 'next/image'
 import Link from "next/link"
 import 'swiper/css'
 import 'swiper/css/navigation'
+import useTranslation from "next-translate/useTranslation";
+
  const HorizonSwiper = () => {
+    
+    const { t } = useTranslation();
+
     const HorizonSwipeData = [
         {
             id : 1,
             image : '/images/ScrollMenu/mobile_ico.png',
-            name : 'Հեռախոսներ',
+            name : 'phones',
         },
         {
             id : 2,
             image : '/images/ScrollMenu/ipad_ico.png',
-            name : 'Պլանշետներ',
+            name : 'tablets',
         },
         {
             id : 3,
             image : '/images/ScrollMenu/watch_ico.png',
-            name : 'Ժամեր',
+            name : 'watches',
         },
         {
             id : 4,
             image : '/images/ScrollMenu/pc_ico.png',
-            name : 'Համակարգիչներ',
+            name : 'computers',
         },
         {
             id : 5,
             image : '/images/ScrollMenu/accessories_ico.png',
-            name : 'Աքսեսուարներ',
+            name : 'accessories',
         },
         {
             id : 6,
             image : '/images/ScrollMenu/camera_ico.png',
-            name : 'Տեսախցիկներ',
+            name : 'photoCameras',
         },
         {
             id : 7,
             image : '/images/ScrollMenu/gamepad_ico.png',
-            name : 'Սարքավորումներ',
+            name : 'equipments',
         }
     ]
   return (
@@ -82,7 +87,7 @@ import 'swiper/css/navigation'
                 </div>
                 <div className='menu__slide__name'>
                     <Link href="/#">
-                        <a>{slide.name}</a>
+                        <a>{t(`swiper:${slide.name}`)}</a>
                     </Link>
                 </div>
             </div>

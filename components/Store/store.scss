@@ -25,7 +25,7 @@ $green : #9fda40;
     transition: border 1s;
 
     background: rgba(66, 66, 66, 0.41);
-    border-radius: 16px;
+    border-radius: 4px;
     box-shadow: rgb(0 0 0 / 17%) 0px 4px 30px;
     backdrop-filter: blur(3.5px);
 }
@@ -41,7 +41,7 @@ $green : #9fda40;
 }
 .wrap .head p{
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
     font-size: 13px;
     padding: 3px 7px;
     color: #fff;
@@ -51,14 +51,17 @@ $green : #9fda40;
     top: 3px;
 }
 /* Check is available*/
-.wrap .head .Arka{
+.wrap .head .inStock{
     background: #9fda40;
 }
-.wrap .head .che{
+.wrap .head .outOfStock{
     background: var(--red);
 }
-.wrap .head .Sahmanapak{
+.wrap .head .limited{
     background: #835a00;
+}
+.wrap .head .new {
+    background: #24af24;
 }
 .wrap .image{
     width: 100%;

@@ -89,7 +89,7 @@ const HeaderComponent = () => {
                       </a>
                     </Link>
                     <div className="adress__of__store">
-                      <aside>Ք․ Երևան Ամիրյան 5, <span>Ք․ Մասիս Հանրապետության 5/1</span></aside> 
+                      <aside>{t("header:store1")}, <span>{t("header:store2")}</span></aside> 
                     </div>
                   </div>
                   <div className="upheaderright">
