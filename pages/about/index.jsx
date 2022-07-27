@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import AboutUs from "../../components/aboutus/Aboutus";
+import AboutUs from "../../components/AboutUs/Aboutus";
 import Stores from "../../components/Stores/Stores";
 import MainLayoutComponent from '../../components/MainLayout/MainLayoutComponent'
 import AOS from "aos";
