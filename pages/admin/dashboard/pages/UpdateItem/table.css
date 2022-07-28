@@ -1,0 +1,15 @@
+.css-1hpqosy-MuiFormControlLabel-root{
+margin-left: 8px !important;
+margin-right: 8px !important;
+}
+.ram{
+    max-width: 190px;
+}
+/* Color cursor auto */
+.css-j204z7-MuiFormControlLabel-root{
+    cursor: auto !important;
+}
+/* Color span marginLeft */
+.css-ahj2mt-MuiTypography-root{
+    margin-left: 5px !important; 
+}
