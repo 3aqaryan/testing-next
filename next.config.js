@@ -5,3 +5,8 @@ module.exports = nextTranslate({
     return config;
   }
 })
+module.exports = {
+  env: {
+    API_URL: 'http://localhost:5000',
+  },
+}

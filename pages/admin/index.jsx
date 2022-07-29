@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router'
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
@@ -11,9 +11,8 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-// import axios from 'axios';
-// import Cookies from 'universal-cookie';
-import { useNavigate } from "react-router-dom";
+import { registration, login } from '../../components/http/userApi';
+
 function Copyright(props) {
   return (
     <Typography variant="body2" color="white" align="center" {...props}>
@@ -30,39 +29,22 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function Admin() {
-    // const cookies = new Cookies();
-    const [user, setUser] = useState('')
-    // let navigate = useNavigate();
-  const handleSubmit = (event) => {
+  // const router = useRouter()
+  // console.log(router)
+    const [form, setForm] = useState({
+      email : '',
+      password : ''
+  })
+  const changeHandler = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const sendData = {
-      login: data.get('login'),
-      password: data.get('password'),
-    }
-    console.log(sendData)
-    // axios.post("http://localhost/newmobile/admin/login.php", sendData)
-    // .then((response) =>{
-    //   console.log(response.data)
-    //     if(response.data[0].status === 'invalid'){
-    //         setUser('Սխալ մուտքանուն կամ գաղտնաբառ')
-    //     }
-    //     else if(response.data[0].status === 'invalidEmpty'){
-    //         cookies.remove('token')
-    //         cookies.remove('user')
-    //         setUser('Դաշտերը լրացնել ամբողջությամբ')
-    //     }
-    //     else{
-    //         setUser('Հաջող մուտք')
-    //         cookies.set('token', response.data[0].token, { path: '/' });
-    //         cookies.set('user', response.data[0].user, { path: '/' });
-    //         setTimeout(() => {
-    //             navigate(`/dashboard`);
-    //         },2500)
-    //     }
-    // })
-  };
-
+    setForm({...form, [event.target.name] : event.target.value})
+  }
+  const click = async (event) => {
+    let user;
+    event.preventDefault();
+    user = await login(form.email, form.password)
+    console.log(user)
+}
   return (
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
@@ -81,18 +63,20 @@ export default function Admin() {
           <Typography component="h1" variant="h5">
             Sign in
           </Typography>
-          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+          <Box component="form" noValidate sx={{ mt: 1 }}>
             <TextField
+              onChange={changeHandler}
               margin="normal"
               required
               fullWidth
               id="login"
-              label="Login"
-              name="login"
-              autoComplete="login"
+              label="email"
+              name="email"
+              autoComplete="email"
               autoFocus
             />
             <TextField
+              onChange={changeHandler}
               margin="normal"
               required
               fullWidth
@@ -106,12 +90,13 @@ export default function Admin() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             /> */}
-            <span style={user === "Սխալ մուտքանուն կամ գաղտնաբառ" || user === 'Դաշտերը լրացնել ամբողջությամբ' ? {color : 'red', fontSize : 12} : {color : 'green', fontSize : 12}}>{user}</span>
+            <span></span>
             <Button
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              onClick={click}
             >
               Sign In
             </Button>
